@@ -20,7 +20,7 @@ classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "trai
               "microwave", "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors",
               "teddy bear", "hair drier", "toothbrush"
               ]
-mask = cv2.imread("img.jpg")
+mask = cv2.imread("car_masking.jpg")
 mask_resized = cv2.resize(mask, (960,540))
 
 tracker = Sort(max_age=20, min_hits=3, iou_threshold=0.3)
